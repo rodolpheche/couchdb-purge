@@ -1,0 +1,16 @@
+[package]
+name = "couchdb-purge"
+version = "0.1.0"
+authors = ["rodolpheche <rodolphe.chaigneau@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = { version = "0.3", default-features = false }
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+dialoguer = "0.8.0"
+
+[build-dependencies]
+structopt = { version = "0.3", default-features = false }
+regex = "1.4.2"
